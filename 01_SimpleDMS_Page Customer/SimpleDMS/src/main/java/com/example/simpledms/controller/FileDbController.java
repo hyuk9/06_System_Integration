@@ -132,7 +132,6 @@ public class FileDbController {
     }
 
 
-
     //    파일 다운로드 함수 : url/api/fileDb/1
     @GetMapping("/fileDb/{fid}")
     public ResponseEntity<byte[]> getFile(@PathVariable int fid) {

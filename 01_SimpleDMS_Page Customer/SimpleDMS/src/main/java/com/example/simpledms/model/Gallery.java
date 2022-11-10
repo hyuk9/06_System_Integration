@@ -20,10 +20,10 @@ import javax.persistence.*;
  * 2022-10-19         ds          최초 생성
  */
 @Entity
-@Table(name = "TB_FILE")
+@Table(name = "TB_GALLERY")
 @SequenceGenerator(
-        name= "SQ_FILE_GENERATOR"
-        , sequenceName = "SQ_FILE"
+        name= "SQ_GALLERY_GENERATOR"
+        , sequenceName = "SQ_GALLERY"
         , initialValue = 1
         , allocationSize = 1
 )
@@ -41,44 +41,39 @@ import javax.persistence.*;
 //  사용법 1) @SQLDelete(sql="update문") : delete 문이 실행되지 않고, 매개변수의 update문이 실행되게함
 //       2) @Where(clause="조건") : 대상클래스 붙이면 sql문 실행 시 강제 조건을 부여함
 @Where(clause = "DELETE_YN = 'N'")
-@SQLDelete(sql="UPDATE TB_FILE SET DELETE_YN = 'Y', DELETE_TIME = TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') WHERE FID = ?")
-public class FileDb extends BaseTimeEntity {
+@SQLDelete(sql="UPDATE TB_GALLERY SET DELETE_YN = 'Y', DELETE_TIME = TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') WHERE GID = ?")
+public class Gallery extends BaseTimeEntity {
     //    부서 번호 : dno
 //    @Id : 기본키
 //    시퀀스 사용 : ORACLE / POSTGRE 등
 //    MYSQL /MARIA DB -> increment 이용
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE
-                   , generator = "SQ_FILE_GENERATOR"
+            , generator = "SQ_GALLERY_GENERATOR"
     )
-    private Integer fid;
+    private Integer gid;
 
     @Column(columnDefinition = "VARCHAR2(255)")
-    private String fileTitle;
+    private String galleryTitle;
 
     @Column(columnDefinition = "VARCHAR2(255)")
-    private String fileContent;
+    private String galleryFileName;
 
     @Column(columnDefinition = "VARCHAR2(255)")
-    private String fileName;
+    private String galleryType;
 
-    @Column(columnDefinition = "VARCHAR2(255)")
-    private String fileType;
-
-//    @Lob : DB 테이블의 Blob / Clob 자료형에 해당하는 컬럼일 경우 사용함
-//           자료형은 byte[] 사용.
-
+    // @Lob : DB 테이블의 BLOB/CLOB 자료형에 해당하는 컬럼일경우 사용하는 어노테이션
+    // 자료형은 byte[] 사용.
     @Lob
     @Column
-    private byte[] fileData; // 이미지
+    private byte[] galleryData;
 
 
-    public FileDb(String fileTitle, String fileContent, String fileName, String fileType, byte[] fileData) {
-        this.fileTitle = fileTitle;
-        this.fileContent = fileContent;
-        this.fileName = fileName;
-        this.fileType = fileType;
-        this.fileData = fileData;
+    public Gallery(String galleryTitle, String galleryFileName, String galleryType, byte[] galleryData) {
+        this.galleryTitle = galleryTitle;
+        this.galleryFileName = galleryFileName;
+        this.galleryType = galleryType;
+        this.galleryData = galleryData;
     }
 }
 

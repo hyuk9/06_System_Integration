@@ -145,7 +145,7 @@ export default {
         .catch((e) => {
           console.log(e);
         });
-    },
+    },                                 
     // select box 값 변경시 실행되는 함수(재조회)
     handlePageSizeChange(event) {
       this.pageSize = event.target.value; // 한페이지당 개수 저장(3, 6, 9)
