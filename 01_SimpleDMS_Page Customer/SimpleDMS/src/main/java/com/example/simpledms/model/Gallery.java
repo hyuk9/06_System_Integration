@@ -49,7 +49,7 @@ public class Gallery extends BaseTimeEntity {
 //    MYSQL /MARIA DB -> increment 이용
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE
-            , generator = "SQ_GALLERY_GENERATOR"
+                   , generator = "SQ_GALLERY_GENERATOR"
     )
     private Integer gid;
 
@@ -62,19 +62,13 @@ public class Gallery extends BaseTimeEntity {
     @Column(columnDefinition = "VARCHAR2(255)")
     private String galleryType;
 
-    // @Lob : DB 테이블의 BLOB/CLOB 자료형에 해당하는 컬럼일경우 사용하는 어노테이션
-    // 자료형은 byte[] 사용.
+//    @Lob : DB 테이블의 Blob / Clob 자료형에 해당하는 컬럼일 경우 사용함
+//           자료형은 byte[] 사용.
+
     @Lob
     @Column
-    private byte[] galleryData;
+    private byte[] galleryData; // 이미지
 
-
-    public Gallery(String galleryTitle, String galleryFileName, String galleryType, byte[] galleryData) {
-        this.galleryTitle = galleryTitle;
-        this.galleryFileName = galleryFileName;
-        this.galleryType = galleryType;
-        this.galleryData = galleryData;
-    }
 }
 
 

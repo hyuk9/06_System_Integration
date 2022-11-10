@@ -104,11 +104,12 @@ const routes = [
     // component: () => import('@/components/fileDb/FileDbUpload.vue')
     component: () => import("../components/fileDb/FileDbUpload.vue"),
   },
+  // Gallery Upload 페이지
   {
     path: "/gallery",
     name: "gallery",
     // vue 경로 표기법 : @ == /src
-    // component: () => import('@/components/gallery/GalleryUpload.vue')
+    // component: () => import('@/components/fileDb/FileDbUpload.vue')
     component: () => import("../components/gallery/GalleryUpload.vue"),
   },
 ];

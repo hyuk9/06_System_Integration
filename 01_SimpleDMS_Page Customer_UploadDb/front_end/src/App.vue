@@ -116,7 +116,7 @@
           >
         </li>
 
-        <!-- 대메뉴 #7 : FileDb Upload -->
+        <!-- 대메뉴 #7 : Gallery Upload -->
         <li class="nav-item ms-5">
           <a class="nav-link" aria-current="page" href="/gallery"
             >Gallery Upload</a

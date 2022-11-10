@@ -8,7 +8,7 @@
           type="text"
           class="form-control"
           placeholder="Search by Title"
-          v-model="searchGalleryTitle"
+          v-model="searchTitle"
         />
         <!-- 검색어 버튼 -->
         <div class="input-group-append">
@@ -60,9 +60,9 @@
         </div>
         <!-- 페이징 양식 끝 -->
 
-        <!-- 이미지명(fileTitle) 입력박스 시작 -->
+        <!-- 이미지명(galleryTitle) 입력박스 시작 -->
         <div class="mb-3 col-md-5">
-          <label for="galleryTitle" class="form-label">GalleryTitle</label>
+          <label for="galleryTitle" class="form-label">이미지명</label>
           <input
             type="text"
             class="form-control"
@@ -76,7 +76,7 @@
 
         <!-- 이미지내용 입력박스 시작 -->
         <div class="mb-3 col-md-5">
-          <label for="galleryFileName" class="form-label">GalleryFileName</label>
+          <label for="galleryFileName" class="form-label">내용</label>
           <input
             type="text"
             class="form-control"
@@ -91,12 +91,12 @@
         <!-- 이미지 선택상자 시작 -->
         <div class="mb-3 col-md-5">
           <label class="btn btn-default p-0">
-            <!-- <!— 파일 선택상자 —> -->
+            <!-- 파일 선택상자 -->
             <input
               type="file"
               accept="image/*"
               ref="file"
-              @change="selectGallery"
+              @change="selectImage"
             />
           </label>
         </div>
@@ -104,10 +104,10 @@
 
         <!-- upload 버튼 : insert 문 실행 시작 -->
         <div class="mb-3">
-          <!-- <!— 서버에 insert 문 호출 —> -->
+          <!-- 서버에 insert 문 호출 -->
           <button
             class="btn btn-success btn-sm float-left"
-            :disabled="!currentGallery"
+            :disabled="!currentImage"
             @click="upload"
           >
             Upload
@@ -119,9 +119,9 @@
     <!-- Upload 끝 -->
 
     <!-- 미리보기 이미지 시작 -->
-    <div v-if="previewGallery">
+    <div v-if="previewImage">
       <div>
-        <img class="preview my-3" :src="previewGallery" alt="" />
+        <img class="preview my-3" :src="previewImage" alt="" />
       </div>
     </div>
     <!-- 미리보기 이미지 끝 -->
@@ -132,26 +132,26 @@
     </div>
     <!-- 서버 에러 메세지가 있을 경우 아래 출력 끝 -->
 
-    <!-- <!— 쇼핑 카트 형태 디자인 시작 —> -->
-    <!-- <!— v-for 시작 —> -->
+    <!-- 쇼핑 카트 형태 디자인 시작 -->
+    <!-- v-for 시작 -->
     <div class="row">
-      <div class="col-sm-6" v-for="(data, index) in gallery" :key="index">
+      <div class="col-sm-4" v-for="(data, index) in gallery" :key="index">
         <div class="card">
-          <img :src="data.galleryUrl" class="card-img-top" alt="강의" />
+          <img :src="data.fileUrl" class="card-img-top" alt="강의" />
           <div class="card-body">
             <h5 class="card-title">{{ data.galleryTitle }}</h5>
             <p class="card-text">
               {{ data.galleryFileName }}
             </p>
-            <a style="color: inherit" @click="deleteGallery(data.gid)">
-              <!-- <!— <i class="fas fa-trash" /> —> -->
-              <span class="badge bg-danger">Delete</span>
+            <a style="color: inherit" @click="deleteImage(data.gid)">
+              <!-- <i class="fas fa-trash" /> -->
+              <button class="btn btn-danger btn-sm float-left">Delete</button>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <!— 쇼핑 카트 형태 디자인 끝 —> -->
+    <!-- 쇼핑 카트 형태 디자인 끝 -->
   </div>
 </template>
 
@@ -162,13 +162,13 @@ import GalleryDataService from "../../services/GalleryDataService";
 export default {
   data() {
     return {
-      currentGallery: undefined, // 현재 이미지 변수
-      previewGallery: undefined, // 미리보기 이미지 변수
+      currentImage: undefined, // 현재 이미지 변수
+      previewImage: undefined, // 미리보기 이미지 변수
       message: "", // 서버쪽 메세지를 저장할 변수
       gallery: [], // 이미지 객체 배열
-      searchGalleryTitle: "", // 이미지명으로 검색하는 변수
+      searchTitle: "", // 이미지명으로 검색하는 변수
 
-      // springboot 요청할 변수 , 이미지명(fileTitle), 내용(content)
+      // springboot 요청할 변수, 이미지명(galleryTitle), 내용(content)
       galleryTitle: "",
       galleryFileName: "",
 
@@ -183,7 +183,7 @@ export default {
   methods: {
     // 조회 함수
     retrieveGallery() {
-      GalleryDataService.getFiles(this.searchGalleryTitle, this.page - 1, this.pageSize)
+      GalleryDataService.getFiles(this.searchTitle, this.page - 1, this.pageSize)
         // 성공하면 .then() 결과가 전송됨
         .then((response) => {
           const { gallery, totalItems } = response.data; // springboot 의 전송된 맵 정보
@@ -198,12 +198,12 @@ export default {
         });
     },
     // 파일 선택상자에서 선택한 이미지를 저장하는 함수
-    selectGallery() {
+    selectImage() {
       // 첫번째 선택한 이미지를 변수에 저장
       // this.$refs : $refs 속성이 있는 컨트롤이 선택됨
-      this.currentGallery = this.$refs.file.files.item(0);
+      this.currentImage = this.$refs.file.files.item(0);
       // .createObjectURL() : 이미지 주소만 참조해서 이미지 보여주기 함수
-      this.previewGallery = URL.createObjectURL(this.currentGallery);
+      this.previewImage = URL.createObjectURL(this.currentImage);
       this.message = "";
     },
     // upload 함수
@@ -211,16 +211,15 @@ export default {
       GalleryDataService.upload(
         this.galleryTitle,
         this.galleryFileName,
-        this.currentGallery
+        this.currentImage
       )
-        // insert 성공 then()
         .then((response) => {
           // 서버쪽 성공 메세지를 저장
           this.message = response.data.message;
 
           // 화면에 재조회 요청(axios 함수로 재조회 요청)
           return GalleryDataService.getFiles(
-            this.galleryTitle,
+            this.searchTitle,
             this.page - 1,
             this.pageSize
           );
@@ -251,25 +250,31 @@ export default {
       // 재조회 함수 호출
       this.retrieveGallery();
     },
-    deleteGallery(gid) {
-
-      GalleryDataService.deleteFiles(gid)
+    deleteImage(gid) {
+      GalleryDataService.delete(gid)
       .then(response => {
-        console.log(response);
-        this.message = "정상적으로 삭제되었습니다"
-        // 삭제후 재조회
-        this.retrieveGallery();
+        console.log(response.data);
+        this.message = "정상적으로 삭제되었습니다.";
 
+        // 삭제 후 재조회
+        this.retrieveGallery();
       })
-      .catch(e => {console.log(e);
-      this.message = "삭제중 에러가 발생되었습니다" })
-    },
+      // 실패하면 .catch() 에러메세지가 전송됨
+      .catch(e => {
+        console.log(e);
+        this.message = "삭제 시 에러가 발생했습니다." + e.message;
+      });
+    }
+  },
+  // 화면뜨자마자 실행되는 이벤트
+  mounted() {
+    this.retrieveGallery();
   },
 };
 </script>
 
 <style>
-.preview { max-width:200px;}
-
-
+  .preview {
+    max-width: 200px;
+  }
 </style>
