@@ -69,6 +69,12 @@ public class Gallery extends BaseTimeEntity {
     @Column
     private byte[] galleryData; // 이미지
 
+    public Gallery(String galleryTitle, String galleryFileName, String galleryType, byte[] galleryData) {
+        this.galleryTitle = galleryTitle;
+        this.galleryFileName = galleryFileName;
+        this.galleryType = galleryType;
+        this.galleryData = galleryData;
+    }
 }
 
 

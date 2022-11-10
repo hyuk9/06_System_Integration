@@ -251,6 +251,7 @@ export default {
       this.retrieveGallery();
     },
     deleteImage(gid) {
+      console.log(gid);
       GalleryDataService.delete(gid)
       .then(response => {
         console.log(response.data);
