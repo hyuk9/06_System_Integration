@@ -41,12 +41,12 @@ public class DeptService {
         Optional<Dept> optionalDept = deptRepository.findById(dno);
 
 //        데이터 가공
-        Dept dept = optionalDept.get();
-        dept.setDname(dept.getDname() + "_해킹");
-
-//        가공 데이터를 다시 optional 넣기
-        optionalDept = Optional.ofNullable(dept);
-        log.debug(optionalDept.get().toString());
+//        Dept dept = optionalDept.get();
+//        dept.setDname(dept.getDname() + "_해킹");
+//
+////        가공 데이터를 다시 optional 넣기
+//        optionalDept = Optional.ofNullable(dept);
+//        log.debug(optionalDept.get().toString());
         return optionalDept;
     }
 
