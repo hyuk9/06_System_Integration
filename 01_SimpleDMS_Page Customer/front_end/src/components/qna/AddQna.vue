@@ -22,7 +22,7 @@
           name="answer"
           v-model="qna.answer"
         />
-      </div>
+      </div> 
       <div class="mb-3">
         <label for="email" class="form-label"> Questioner </label>
         <input

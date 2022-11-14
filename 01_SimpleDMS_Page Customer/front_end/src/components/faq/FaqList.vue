@@ -118,26 +118,26 @@ export default {
       searchTitle: "",
 
       // 페이징을 위한 변수 정의
-      page: 1,     // 현재 페이지
-      count: 0,    // 전체 데이터 건수
+      page: 1, // 현재 페이지
+      count: 0, // 전체 데이터 건수
       pageSize: 3, // 한페이지당 몇개를 화면에 보여줄지 결정하는 변수
 
-      pageSizes: [3,6,9] // select box 에 넣을 기본 데이터
+      pageSizes: [3, 6, 9], // select box 에 넣을 기본 데이터
     };
   },
   // 함수 정의하는 곳 : methods:
   methods: {
     // axios , 모든 부서 정보 조회 요청 함수
     retrieveFaq() {
-     // getAll() -> (변경) getAll(title, page, size)
-      FaqDataService.getAll(this.searchTitle, this.page-1, this.pageSize)
+      // getAll() -> (변경) getAll(title, page, size)
+      FaqDataService.getAll(this.searchTitle, this.page - 1, this.pageSize)
         // 성공하면 .then() 결과가 전송됨
         .then((response) => {
           // this.dept = response.data; ->(변경) const {dept, totalItems} = response.data;
           // let(const) { 속성명, 속성명2 } = 데이터 객체 배열 (모던자바문법 구조분해할당)
-          const {faq, totalItems} = response.data; // springboot 의 전송된 맵 정보
-          this.faq = faq;         // 스프링부트에서 전송한 데이터
-          this.count = totalItems;  // 스프링부트에서 전송한 페이지정보(총 건수)
+          const { faq, totalItems } = response.data; // springboot 의 전송된 맵 정보
+          this.faq = faq; // 스프링부트에서 전송한 데이터
+          this.count = totalItems; // 스프링부트에서 전송한 페이지정보(총 건수)
           // 디버깅 콘솔에 정보 출력
           console.log(response.data);
         })
@@ -145,8 +145,8 @@ export default {
         .catch((e) => {
           console.log(e);
         });
-    },
-     // select box 값 변경시 실행되는 함수(재조회)
+    },                                 
+    // select box 값 변경시 실행되는 함수(재조회)
     handlePageSizeChange(event) {
       this.pageSize = event.target.value; // 한페이지당 개수 저장(3, 6, 9)
       this.page = 1;

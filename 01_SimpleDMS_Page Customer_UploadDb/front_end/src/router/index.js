@@ -112,6 +112,22 @@ const routes = [
     // component: () => import('@/components/fileDb/FileDbUpload.vue')
     component: () => import("../components/gallery/GalleryUpload.vue"),
   },
+  // Excel Tutorial Upload 페이지
+  {
+    path: "/excel/tutorial",
+    name: "excel-tutorial",
+    // vue 경로 표기법 : @ == /src
+    // component: () => import('@/components/fileDb/FileDbUpload.vue')
+    component: () => import("../components/excel/TutorialUpload.vue"),
+  },
+  // Excel Dept Upload 페이지
+  {
+    path: "/excel/dept",
+    name: "excel-dept",
+    // vue 경로 표기법 : @ == /src
+    // component: () => import('@/components/fileDb/FileDbUpload.vue')
+    component: () => import("../components/excel/DeptUpload.vue"),
+  },
 ];
 
 const router = new VueRouter({

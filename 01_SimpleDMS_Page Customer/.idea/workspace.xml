@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3cf6eb8d-9cc9-4cb9-908b-7f8796234275" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/01_SimpleDMS_Page Customer_UploadDb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_SimpleDMS_Page Customer_UploadDb/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/.idea/Previous_Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/java/com/example/designpattern/DesignPatternApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/java/com/example/designpattern/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/java/com/example/designpattern/controller/AddOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/java/com/example/designpattern/controller/SubstractOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/java/com/example/designpattern/model/AbstractOperationTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/DesignPattern/src/test/java/com/example/designpattern/DesignPatternApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/SimpleDmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/controller/DeptController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/controller/EmpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/controller/FaqController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/model/BaseTimeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/model/Dept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/model/Emp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/model/Faq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/repository/DeptRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/repository/EmpRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/repository/FaqRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/service/DeptService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/service/EmpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/java/com/example/simpledms/service/FaqService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/236.4445956f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/474.4445956f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/486.5bf269e0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/551.5bf269e0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/589.ba9419c9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/704.f4913390.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/745.ba9419c9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/786.4445956f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/css/975.5bf269e0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/236.1d571ded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/236.1d571ded.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/474.9a7ab155.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/474.9a7ab155.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/486.ec0a67a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/486.ec0a67a0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/551.20cd9b7d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/551.20cd9b7d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/589.eeb97fef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/589.eeb97fef.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/645.740dcb1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/645.740dcb1a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/704.71fde607.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/704.71fde607.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/745.81b30b84.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/745.81b30b84.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/786.02f7502c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/786.02f7502c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/975.4d8e101b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/975.4d8e101b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/app.83d55915.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/app.83d55915.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/chunk-vendors.57f5aa11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/main/resources/static/js/chunk-vendors.57f5aa11.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/test/java/com/example/simpledms/SimpleDmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/test/java/com/example/simpledms/controller/DeptControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/test/java/com/example/simpledms/controller/EmpControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/test/java/com/example/simpledms/repository/DeptRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/SimpleDMS/src/test/java/com/example/simpledms/service/DeptServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/dept/AddDept.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/dept/DeptDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/dept/DeptList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/emp/AddEmp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/emp/EmpDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/emp/EmpList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/faq/AddFaq.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/faq/FaqDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/components/faq/FaqList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/http-common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/services/DeptDataService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/services/EmpDataService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/services/FaqDataService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Previous_Test/front_end/vue.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HO5oRIIoaKLgssZmvtjNRutSH7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="3cf6eb8d-9cc9-4cb9-908b-7f8796234275" name="변경" comment="" />
+      <created>1668143465239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668143465239</updated>
+      <workItem from="1668143466859" duration="6000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -122,6 +122,28 @@
             >Gallery Upload</a
           >
         </li>
+
+
+        <!-- 대메뉴 #8 : 엑셀 Excel / Download -->
+        <li class="nav-item dropdown ms-5">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Excel</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <router-link to="/excel/tutorial" class="dropdown-item">Tutorial upload</router-link>
+            </li>
+            <li>
+              <router-link to="/excel/dept" class="dropdown-item">Dept upload</router-link>
+            </li>
+          </ul>
+        </li>
+
       </div>
     </nav>
 
